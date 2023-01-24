@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind -->
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/35df8bbe47.js" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="style.css">
+    <title>Legal solution</title>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <!-- navbar start -->
+        <section>
+            <div class="container mx-auto">
+                <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+                    <div class="container flex flex-wrap items-center justify-between mx-auto">
+                        <a href="https://flowbite.com/" class="flex items-center">
+                            <img src="./images/logo2.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+                        </a>
+                        <div class="flex md:order-2">
+                            <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                                aria-expanded="false"
+                                class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+                                <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="sr-only">Search</span>
+                            </button>
+                            <button data-collapse-toggle="navbar-search" type="button"
+                                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                aria-controls="navbar-search" aria-expanded="false">
+                                <span class="sr-only">Open menu</span>
+                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                            id="navbar-search">
+                            <div class="relative mt-3 md:hidden">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <input type="text" id="search-navbar"
+                                    class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Search...">
+                            </div>
+                            <ul
+                                class="flex flex-col p-4 pt-[40px] pr-[136px] border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:border-gray-700">
+                                <li class="">
+                                    <a href="#"
+                                        class="block text-xl py-2 pl-3 pr-4 text-[#707070] bg-blue-700 rounded md:bg-transparent md:p-0"
+                                        aria-current="page">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block text-xl py-2 pl-3 pr-4 text-[#707070] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:bg-transparent dark:border-gray-700">Service
+                                        <i class="fa-solid fa-chevron-right"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block text-xl py-2 pl-3 pr-4 text-[#707070] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:bg-transparent dark:border-gray-700">Cases
+                                        <i class="fa-solid fa-chevron-right"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block text-xl py-2 pl-3 pr-4 text-[#707070] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:bg-transparent dark:border-gray-700">Blog
+                                        <i class="fa-solid fa-chevron-right"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block text-xl py-2 pl-3 pr-4 text-[#707070] rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:bg-transparent dark:border-gray-700">Contact
+                                        Us <i class="fa-solid fa-chevron-right"></i></a>
+                                </li>
+                                <li>
+
+                                    <div class="block space-y-4 md:flex md:space-y-0 md:space-x-4">
+                                        <!-- Modal toggle -->
+
+                                        <button data-modal-target="bottom-right-modal"
+                                            data-modal-toggle="bottom-right-modal"
+                                            class="block text-xl py-2 ml-[135px] h-12 w-52 pr-4 text-white rounded  md:p-0 bg-[#B68C5A]"
+                                            type="button">
+                                            Free Consultation
+                                        </button>
+                                    </div>
+                                    <!-- Bottom Right Modal -->
+                                    <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1"
+                                        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                                        <div class="relative w-full h-full max-w-2xl md:h-auto">
+                                            <!-- Modal content -->
+                                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                                <!-- Modal header -->
+                                                <div
+                                                    class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
+                                                    <h3 class="text-xl font-medium text-gray-900 dark:text-white">
+                                                        Bottom right modal
+                                                    </h3>
+                                                    <button type="button"
+                                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                        onclick="window.location.href='http://127.0.0.1:5500/index.html';"
+                                                        data-modal-hide="bottom-right-modal">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                        <span class="sr-only">Close modal</span>
+                                                    </button>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="p-6 space-y-6">
+                                                    <p
+                                                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                                        With less than a month to go before the European Union enacts
+                                                        new consumer privacy laws for its citizens, companies around the
+                                                        world are updating their terms of service agreements to comply.
+                                                    </p>
+                                                    <p
+                                                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                                        The European Union’s General Data Protection Regulation
+                                                        (G.D.P.R.) goes into effect on May 25 and is meant to ensure a
+                                                        common set of data rights in the European Union. It requires
+                                                        organizations to notify users as soon as possible of high-risk
+                                                        data breaches that could personally affect them.
+                                                    </p>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div
+                                                    class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                                    <button data-modal-hide="bottom-right-modal" type="button"
+                                                        formaction="https://www.w3docs.com"
+                                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                                        onclick="window.location.href='https://www.programming-hero.com/';">I
+                                                        accept</button>
+                                                    <button data-modal-hide="bottom-right-modal" type="button"
+                                                        class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
+                                                        onclick="window.location.href='https://www.programming-hero.com/';">Decline</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- navbar End -->
+        <!-- banner start -->
+        <section class="">
+            <div class="mt-16 ml-[100px]">
+                <div class="banner text-white text-center pt-24 mr-80 ">
+                    <h1 class="text-7xl font-medium">We Provide Effective <br> Legal Solutions</h1>
+                    <p class="text-lg mt-6">There are many variations of passages of Lorem Ipsum available, but the
+                        majority <br> have suffered alteration in some form, by injected humour.</p>
+                    <div class="mt-8">
+                        <input
+                            class="h-16 w-[500px] text-left text-currenttext-currenttext-currenttext-currenttext-current"
+                            type="text" placeholder="Search Your services">
+                        <button class="h-16 ml-2 w-40 rounded-lg bg-[#B68C5A] text-xl font-semibold">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner End -->
+    </header>
+    <main class="">
+        <!-- legal practice start -->
+        <section class="">
+            <div class="">
+                <div class="text-center">
+                    <h1 class="text-[#414040] text-4xl font-black mt-32 pr-[356px]">The Legal Practice Area</h1>
+                    <p class="pr-[356px] mt-5 text-[#707070] text-lg font-Poppins">There are many variations of passages
+                        of Lorem Ipsum available, but the majority have <br>
+                        suffered alteration in some form, by injected humour.
+                    </p>
+                </div>
+                <div
+                    class="p-10 mt-16 pr-[356px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 z-10 absolute">
+                    <div class="rounded overflow-hidden w-[350px] h-[450px] border-b-4 border-gray-50">
+                        <img class="pl-[140px] pt-14" src="./images/business.png" alt="Mountain">
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-3xl mb-2 pt-6 text-[#414040]">Business Law</div>
+                            <p class="text-[#707070] text-base pt-5">
+                                There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                                majority have <br> suffered alteration in some <br> form, by injected humour.
+                            </p>
+                            <img class="pl-32 pt-6" src="./images/Frame.png" alt="">
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div
+                        class="rounded overflow-hidden w-[350px] h-[450px] border-2 border-gray-200 bg-gradient-to-t from-[#f8fafc] to-[#f3f4f6]">
+                        <img class="pl-[140px] pt-14" src="./images/criminal.png" alt="Mountain">
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-3xl mb-2 pt-6 text-[#414040]">Criminal Law</div>
+                            <p class="text-[#707070] text-base pt-5">
+                                There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                                majority have <br> suffered alteration in some <br> form, by injected humour.
+                            </p>
+                            <img class="pl-32 pt-6" src="./images/Frame.png" alt="">
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                    <div class="rounded overflow-hidden w-[350px] h-[450px] border-b-4 border-gray-50">
+                        <img class="pl-[140px] pt-14" src="./images/child.png" alt="Mountain">
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-3xl mb-2 pt-6 text-[#414040]">Child Support</div>
+                            <p class="text-[#707070] text-base pt-5">
+                                There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                                majority have <br> suffered alteration in some <br> form, by injected humour.
+                            </p>
+                            <img class="pl-32 pt-6" src="./images/Frame.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div
+                    class="p-10 mt-[510px] pr-[356px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3-hidden lg:grid-cols-3 xl:grid-cols-3 z-10 absolute">
+                    <div class="rounded overflow-hidden w-[350px] h-[450px] border-r-4 border-gray-50">
+                        <img class="pl-[140px] pt-14" src="./images/education.png" alt="Mountain">
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-3xl mb-2 pt-6 text-[#414040]">Business Law</div>
+                            <p class="text-[#707070] text-base pt-5">
+                                There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                                majority have <br> suffered alteration in some <br> form, by injected humour.
+                            </p>
+                            <img class="pl-32 pt-6" src="./images/Frame.png" alt="">
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div class="rounded overflow-hidden w-[350px] h-[450px] border-r-4 border-gray-50">
+                        <img class="pl-[140px] pt-14" src="./images/divorce.png" alt="Mountain">
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-3xl mb-2 pt-6 text-[#414040]">Criminal Law</div>
+                            <p class="text-[#707070] text-base pt-5">
+                                There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                                majority have <br> suffered alteration in some <br> form, by injected humour.
+                            </p>
+                            <img class="pl-32 pt-6" src="./images/Frame.png" alt="">
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                    <div class="rounded overflow-hidden w-[350px] h-[450px]">
+                        <img class="pl-[140px] pt-14" src="./images/tax.png" alt="Mountain">
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-3xl mb-2 pt-6 text-[#414040]">Child Support</div>
+                            <p class="text-[#707070] text-base pt-5">
+                                There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                                majority have <br> suffered alteration in some <br> form, by injected humour.
+                            </p>
+                            <img class="pl-32 pt-6" src="./images/Frame.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- legal practice End -->
+
+        <!-- client say -->
+        <section class="mt-[1200px] pr-80">
+            <div class="text-center">
+                <h1 class="text-5xl font-extrabold">What Our Cient Say</h1>
+                <p class="pt-6 text-[#707070] text-lg">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have <br> suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="w-[1170px] h-[500px] mx-auto pt-[64px]">
+
+                <div id="default-carousel" class="relative" data-carousel="static">
+
+                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+
+                        <div class="hidden duration-700 ease-in-out " data-carousel-item>
+                            <span
+                                class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl "></span>
+                            <img src="./images/slider-1.jpg"
+                                class="contrast-200 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-10 absolute"
+                                alt="...">
+                            <div class="z-10 absolute text-white pl-44 pt-10 text-center">
+                                <div class="pl-[350px] mb-[24px]">
+                                    <img class="w-16 h-16 p-1 rounded-full ring-4 ring-white" src="./images/profile.png"
+                                        alt="Bordered avatar">
+                                </div>
+                                <h1 class="text-3xl font-medium">Awlad Hossain</h1>
+                                <p class="font-normal text-base ">UI Designer</p>
+                                <p class="mt-[32px] text-base">Contrary to popular belief, Lorem Ipsum is not simply
+                                    random text. It has roots in a
+                                    piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia,
+                                    looked up one of the more obscure Latin words, consectetur.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out " data-carousel-item>
+                            <span
+                                class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl "></span>
+                            <img src="./images/slider-2.jpg"
+                                class="contrast-200 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-10 absolute"
+                                alt="...">
+                            <div class="z-10 absolute text-white pl-44 pt-10 text-center">
+                                <div class="pl-[350px] mb-[24px]">
+                                    <img class="w-16 h-16 p-1 rounded-full ring-4 ring-white" src="./images/profile.png"
+                                        alt="Bordered avatar">
+                                </div>
+                                <h1 class="text-3xl font-medium">Awlad Hossain</h1>
+                                <p class="font-normal text-base ">UI Designer</p>
+                                <p class="mt-[32px] text-base">Contrary to popular belief, Lorem Ipsum is not simply
+                                    random text. It has roots in a
+                                    piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia,
+                                    looked up one of the more obscure Latin words, consectetur.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hidden duration-700 ease-in-out " data-carousel-item>
+                            <span
+                                class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl "></span>
+                            <img src="./images/slider-3.jpg"
+                                class="contrast-200 block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 z-10 absolute"
+                                alt="...">
+                            <div class="z-10 absolute text-white pl-44 pt-10 text-center">
+                                <div class="pl-[350px] mb-[24px]">
+                                    <img class="w-16 h-16 p-1 rounded-full ring-4 ring-white" src="./images/profile.png"
+                                        alt="Bordered avatar">
+                                </div>
+                                <h1 class="text-3xl font-medium">Awlad Hossain</h1>
+                                <p class="font-normal text-base ">UI Designer</p>
+                                <p class="mt-[32px] text-base">Contrary to popular belief, Lorem Ipsum is not simply
+                                    random
+                                    text. It has roots in a
+                                    piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia,
+                                    looked up one of the more obscure Latin words, consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                    </div>
+
+                    <button type="button"
+                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7">
+                                </path>
+                            </svg>
+                            <span class="hidden">Anterior</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                            <span class="hidden">Siguiente</span>
+                        </span>
+                    </button>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- client say -->
+
+        <!-- question -->
+        <section>
+            <div class="text-center mt-32">
+                <h1 class="text-[#414040] text-4xl font-extrabold">Frequently Asked Any Questions</h1>
+                <p class="pt-6 font-medium text-lg">There are many variations of passages of Lorem Ipsum available, but
+                    the majority have <br> suffered
+                    alteration in some form, by injected humour.
+                </p>
+            </div>
+            <div class="mt-16 flex ml-[150px]">
+                <div class="w-[570px] mt-[64px]">
+
+                    <div class="" id="accordion-collapse" data-accordion="collapse">
+                        <div class="pb-6">
+                            <h2 id="accordion-collapse-heading-1">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-l bg-[#F3F3F3]"
+                                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-1">
+                                    <span class="text-2xl text-[#414040]">Difference between CSS Grid and CSS
+                                        Flexbox</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-1" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-1">
+                                <div class="p-5 text-[#707070] border border-b-0 border-gray-200 bg-[#F3F3F3]">
+                                    <p class="mb-2 text-black"><span class="font-bold text-xl">Flexbox</span> is
+                                        designed for one-dimensional layouts, and
+                                        flexbox layout is best suited to application components and small-scale layouts,
+                                    </p>
+                                    <p class="text-black"><span class="font-bold text-xl">Grid</span> for
+                                        two-dimensional layouts and the Grid layout is designed for larger-scale layouts
+                                        that are not linear in design
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-6">
+                            <h2 id="accordion-collapse-heading-2">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 bg-[#F3F3F3]"
+                                    data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-2">
+                                    <span class="text-2xl text-[#414040]">what is the purpose of media queries?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-2" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-2">
+                                <div class="p-5 text-[#707070] border border-b-0 border-gray-200 bg-[#F3F3F3]">
+                                    <p class="mb-2 text-black"><span class="font-bold text-xl">The key purpose</span> is
+                                        responsive web design, as they allow you to create different layouts depending
+                                        on the size of the viewport, but they can also be used to detect other things
+                                        about the environment your site is running on, for example whether the user is
+                                        using a touchscreen rather than a mouse</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-6">
+                            <h2 id="accordion-collapse-heading-3">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 bg-[#F3F3F3]"
+                                    data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-3">
+                                    <span class="text-2xl text-[#414040]">what is css box model? and how it
+                                        works?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-3" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-3">
+                                <div class="p-5 text-[#707070] border border-b-0 border-gray-200 bg-[#F3F3F3]">
+                                    <p class="mb-2 text-black"> The <span class="font-bold text-l">box model</span>
+                                        describes how these elements work together
+                                        to create a box as displayed by CSS. A box in CSS consists of a content area,
+                                        which is where any text, images, or other HTML elements are displayed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="accordion-collapse-heading-4">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 bg-[#F3F3F3]"
+                                data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                                aria-controls="accordion-collapse-body-4">
+                                <span class="text-2xl text-[#414040]">what is semantic tag?</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-4" class="hidden"
+                            aria-labelledby="accordion-collapse-heading-4">
+                            <div class="p-5 text-[#707070] border border-b-0 border-gray-200 bg-[#F3F3F3]">
+                                <p class="mb-2 text-black">The <span class="font-bold text-l">semantic tags</span> help
+                                    the search engines and other user devices to determine the importance and context of
+                                    web pages.Example[Many web sites contain HTML code like: div id="nav"> div
+                                    class="header"> div id="footer"> to indicate navigation, header, and footer.]
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pl-16">
+                    <img class="" src="./images/faq.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- question -->
+    </main>
+    <!-- footer -->
+
+    <section class="pb-[100px]">
+        <footer class="bg-black mt-[130px] text-white pl-24 pr-24">
+            <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4 container mx-auto">
+                <div>
+                    <img src="./images/cup.png " alt="">
+                    <h2 class="mb-6 text-xl font-bold text-black uppercase pt-[100px]"><img src="./images/logo.png"
+                            alt=""></h2>
+                    <p class="text-white">There are many variations of <br> passages of Lorem Ipsum <br> available, but
+                        the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+                </div>
+                <div>
+                    <h1 class="mb-6 text-xl text-white pt-[120px]">Usefull Link
+                    </h1>
+                    <ul class="text-white">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Homes</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">About Us</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Cases</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Blog</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="mb-6 text-xl font-bold text-white pt-[120px]">Contact Now</h1>
+                    <ul class="text-white">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">555 4th 5t NW, Washington <br>
+                                DC 20530, United States</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">+88 01750 000 000 <br>
+                                +88 01750 000 000</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">info@gmail.com<br>
+                                info@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1 class="mb-6 text-xl font-bold text-white pt-[120px]">Subscribe
+                    </h1>
+                    <h2>Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</h2>
+                    <div class="flex pt-6">
+                        <input class="h-20 w-80 rounded-lg border-b-2 border-black text-black text-center" type="email"
+                            placeholder="Email address">
+                        <button class="w-20 h-20 rounded-lg bg-[#B68C5A] z-10 absolute ml-56"><i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- footer -->
+
+    <!-- New section -->
+
+    
+<div data-dial-init class="fixed right-6 bottom-6 group">
+    <button title="Hello There!" type="button" data-dial-toggle="speed-dial-menu-default" aria-controls="speed-dial-menu-default" aria-expanded="false" class="flex items-center justify-center text-white  rounded-full w-14 h-14 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <i class="fa-brands fa-rocketchat"></i>
+        <span class="sr-only">Open actions menu</span>
+    </button>
+</div>
+
+    <!-- New section -->
+    <!-- script -->
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script type="module" src="script.js"></script>
+    <!-- script -->
+</body>
+
+</html>

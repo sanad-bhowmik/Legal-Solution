@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:ital@1&display=swap');
+
+h1 {
+    font-family: 'EB Garamond', serif;
+}
+
+.banner {
+    background-image: url("./images/banner.png");
+    height: 550px;
+    background-repeat: no-repeat;
+}
+.bannert{
+    background-image: url("./images/slider-1.jpg");
+    height: 550px;
+    background-repeat: no-repeat;
+}
